@@ -67,9 +67,9 @@ TEST_CASE(invalid_arguments_return_error_codes) {
 }
 
 TEST_MAIN_BEGIN()
-    RUN_TEST(create_destroy_does_not_crash);
-    RUN_TEST(append_accumulates_text);
-    RUN_TEST(append_grows_past_initial_capacity);
-    RUN_TEST(clear_resets_length_but_keeps_buffer_usable);
-    RUN_TEST(invalid_arguments_return_error_codes);
+RUN_TEST(create_destroy_does_not_crash);
+RUN_TEST(append_accumulates_text);
+RUN_TEST(append_grows_past_initial_capacity);
+RUN_TEST(clear_resets_length_but_keeps_buffer_usable);
+RUN_TEST(invalid_arguments_return_error_codes);
 TEST_MAIN_END()

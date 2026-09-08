@@ -26,6 +26,10 @@
 
 #include "ctemplate/export.h"
 
+/** Export/import macro used on every public declaration below, so the same
+ *  header works for static and shared builds without #ifdef soup. */
+#define CTEMPLATE_API CTEMPLATE_EXPORT
+
 #ifdef __cplusplus
 extern "C" {
 #endif
